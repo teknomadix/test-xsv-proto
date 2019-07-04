@@ -1,4 +1,4 @@
-name: xsv
+name: test-xsv-proto
 version: git
 summary: A fast CSV command line toolkit written in Rust
 description: |
@@ -16,10 +16,10 @@ confinement: devmode
 base: core18
 
 parts:
-  xsv:
+  test-xsv-proto:
     plugin: rust
     source: .
 
 apps:
-  xsv:
+  test-xsv-proto:
     command: bin/xsv
